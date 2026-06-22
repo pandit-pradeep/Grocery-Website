@@ -12,6 +12,7 @@ import Customer5 from '../../assets/customer5.jpg'
 import Customer6 from '../../assets/customer6.jpeg'
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { FaStar } from "react-icons/fa6";
 
 
 
@@ -24,7 +25,7 @@ const Testimonials = () => {
             <div className='max-w-[1400px] px-10 mx-auto py-20  '>
                 <Heading highlight='Customers' heading='Saying' />
 
-                <div className='py-5 flex justify-end gap-x-3'>
+                <div className='py-5 flex mt-5 justify-end gap-x-3'>
                     <button className='custom-prev text-2xl text-zinc-800 rounded-lg w-11 h-11 bg-zinc-100 flex justify-center items-center hover:bg-gradient-to-b hover:from-orange-400 hover:to-orange-500 hover:text-white cursor-pointer'>
                         <MdOutlineArrowBackIosNew />
                     </button>
@@ -40,9 +41,9 @@ const Testimonials = () => {
                     }}
                     loop={true}
                     breakpoints={{
-                        640:{slidesPerView:1,spaceBetween:20},
-                        768:{slidesPerView:2,spaceBetween:20},
-                        1024:{slidesPerView:3,spaceBetween:20},
+                        640: { slidesPerView: 1, spaceBetween: 20 },
+                        768: { slidesPerView: 2, spaceBetween: 20 },
+                        1024: { slidesPerView: 3, spaceBetween: 20 },
                     }}
                     modules={[Navigation]} className="mySwiper">
                     {
@@ -51,15 +52,22 @@ const Testimonials = () => {
 
                                 <SwiperSlide className=' bg-zinc-100 rounded-xl p-8'>
                                     <div className='flex gap-5 items-center'>
-                                        <div className='w-16 h-16  rounded-full  bg-red-500 outline-2 outline-orange-500 outline-offset-4'></div>
+                                        <div className='w-22 md:w-16 md:h-16 h-15  rounded-full  bg-red-500 outline-2 outline-orange-500 outline-offset-4 overflow-hidden'>
+                                            <img src={item.image} className='w-full h-full'/>
+                                        </div>
 
                                         <div>
                                             <h5 className='text-xl font-bold'>{item.name}</h5>
                                             <p className='text-zinc-600'>{item.profession}</p>
-                                            <span>{item.rating}</span>
+                                            <span className='flex text-yellow-400 mt-2 text-xl gap-1'>
+                                                {Array.from({ length: item.rating }, (_, index) => (
+                                                    <FaStar/>
+                                                ))}
+                                                
+                                            </span>
                                         </div>
                                     </div>
-                                    <div className='mt-10'>
+                                    <div className='mt-5 min-h-[5vh] '>
                                         <p className='text-zinc-600'>{item.para}</p>
                                     </div>
                                 </SwiperSlide>
@@ -84,7 +92,7 @@ const review = [
         name: 'Emily Johnson',
         profession: 'Food Blogger',
         rating: 3.5,
-        para: 'FreshBasket is my go-to store for all grocery needs. Their produce is always fresh, and the delivery is super fast. I love the user-friendly interface and variety of organic options!',
+        para: 'FreshBasket is my go-to store for all grocery needs. Their produce is always fresh, and the delivery is super fast. ',
         image: Customer1,
     },
 
@@ -93,7 +101,7 @@ const review = [
         name: 'David Smith',
         profession: 'Chef',
         rating: 4.5,
-        para: 'As a chef, quality ingredients are everything. FreshBasket consistently delivers the best vegetables, herbs, and pantry staples. Highly recommended!',
+        para: 'As a chef, quality ingredients are everything. FreshBasket consistently delivers the best vegetables, herbs, and pantry staples. ',
         image: Customer2,
     },
 
@@ -102,7 +110,7 @@ const review = [
         name: 'Alya Zahra',
         profession: 'Model',
         rating: 3.9,
-        para: 'Shopping online with FreshBasket has saved me so much time. I trust them for my familys weekly groceries—always fresh, affordable, and reliable.',
+        para: 'Shopping online with FreshBasket has saved me so much time. I trust them for my familys weekly groceries—always fresh.',
         image: Customer3,
     },
 
