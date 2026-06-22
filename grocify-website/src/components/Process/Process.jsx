@@ -14,7 +14,7 @@ const Process = () => {
 
   const renderSteps = steps.map(item => {
     return (
-      <div className={`flex-1 basis-[300px] ${item.id % 2 === 0 ? 'md:-mt-100' : ''}`}>
+      <div className={`flex-1  ${item.id % 2 === 0 ? 'md:-mt-100' : ''}`}>
         <span className='flex justify-center items-center rounded-full text-white w-18 h-18 text-8xl bg-zinc-800 outline-[3px] outline-offset-7 outline-zinc-800 outline-dashed  mx-auto'>{item.number}</span>
 
 
