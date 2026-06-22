@@ -23,6 +23,7 @@ import SliceCheese from '../../assets/slice-cheese.png'
 import RicottaCheese from '../../assets/ricotta-cheese.png'
 import Grapes from '../../assets/grapes.png'
 import Lettuce from '../../assets/lettuce.png'
+import Orange from '../../assets/orange.png'
 
 
 const products = [
@@ -200,6 +201,16 @@ const products = [
         category: 'Vegetables',
         image: Lettuce
     },
+
+    {
+        id:26,
+        name:'Orange',
+        price:4.5,
+        category:'Fruits',
+        image:Orange
+    },
+
+   
 ];
 
 export default products;
