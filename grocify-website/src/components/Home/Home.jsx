@@ -8,6 +8,8 @@ import Discount from '../Discount/Discount'
 import Process from '../Process/Process'
 import Testimonials from '../Testimonials/Testimonials'
 import Footer from '../Footer/Footer'
+import ContectUs from '../ContectUs/ContectUs'
+import AboutUs from '../AboutUs/AboutUs'
 
 const Home = () => {
   return (
@@ -15,11 +17,13 @@ const Home = () => {
       {/* <Navbar /> */}
       <Hero />
       <Category />
-      <Values/>
-      <Products/>
-      <Discount/>
-      <Process/>
-      <Testimonials/>
+      <Values />
+      <Products />
+      <Discount />
+      <Process />
+      <Testimonials />
+      {/* <ContectUs /> */}
+      {/* <AboutUs /> */}
       {/* <Footer/> */}
     </div>
   )

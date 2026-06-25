@@ -37,16 +37,16 @@ const Navbar = () => {
 
                 <ul className='md:flex items-center gap-x-10 hidden'>
                     <li>
-                        <a href="#" className='font-semibold tracking-wider text-orange-500 '>Home</a>
+                        <Link to="/" className='font-semibold tracking-wider text-orange-500 '>Home</Link>
                     </li>
                     <li>
-                        <a href="#" className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500 '>Abouts Us</a>
+                        <Link to="/about" className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500 '>Abouts Us</Link>
                     </li>
                     <li>
-                        <a href="#" className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500'>Process</a>
+                        <Link to="/process" className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500'>Process</Link>
                     </li>
                     <li>
-                        <a href="#" className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500'>Contact Us</a>
+                        <Link to="/contact" className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500'>Contact Us</Link>
                     </li>
                 </ul>
 
@@ -77,16 +77,16 @@ const Navbar = () => {
 
                 <ul className={`flex items-center gap-x-10 md:hidden absolute flex-col gap-y-1.5 bg-orange-500/20 backdrop-blur-xl shadow-xl  rounded-2xl p-10 top-30 -left-full transform -translate-x-1/2 transition-all duration-500  ${showMenu ? 'left-1/2' : ""}`}>
                     <li>
-                        <a href="#" className='font-semibold tracking-wider text-orange-500 '>Home</a>
+                        <Link to="/" className='font-semibold tracking-wider text-orange-500 '>Home</Link>
                     </li>
                     <li>
-                        <a href="#" className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500 '>Abouts Us</a>
+                        <Link to="/about" className='font-semibold tracking-wider text-zinc-800 hover:text-orange-500 '>Abouts Us</Link>
                     </li>
                     <li>
-                        <a href="#" className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500'>Process</a>
+                        <Link to="/process" className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500'>Process</Link>
                     </li>
                     <li>
-                        <a href="#" className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500'>Contact Us</a>
+                        <Link to="contact" className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500'>Contact Us</Link>
                     </li>
 
                     <li className='flex items-center gap-x-5 flex-col '>
