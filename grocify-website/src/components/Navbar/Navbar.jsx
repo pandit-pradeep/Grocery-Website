@@ -4,10 +4,7 @@ import { IoBagHandle } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
 import { TbMenuDeep } from "react-icons/tb";
 import { TbMenu3 } from "react-icons/tb";
-
-
-
-
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -34,7 +31,7 @@ const Navbar = () => {
     return (
         <header className={`bg-white fixed top-0 right-0 left-0 z-50 ${isScrolled ? 'drop-shadow-[0_4px_15px_rgba(0,0,0,0.5)]' : ''}`}>
             <nav className='flex justify-between max-w-[1400px] mx-auto md:h-[14vh] h-[12vh] items-center px-10'>
-                <a href="#" className='text-3xl font-bold' >Gr<span className='text-orange-500 uppercase'>o</span>cify</a>
+                <Link href="/" className='text-3xl font-bold' >Gr<span className='text-orange-500 uppercase'>o</span>cify</Link>
 
                 {/* Desktop Menu */}
 
