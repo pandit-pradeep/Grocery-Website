@@ -22,7 +22,7 @@ const Testimonials = () => {
 
     return (
         <section>
-            <div className='max-w-[1400px] px-10 mx-auto py-20  '>
+            <div className='max-w-[1400px] px-10 mx-auto py-20 md:-mt-40 -mt-20  '>
                 <Heading highlight='Customers' heading='Saying' />
 
                 <div className='py-5 flex mt-5 justify-end gap-x-3'>

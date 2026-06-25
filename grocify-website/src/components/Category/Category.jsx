@@ -4,6 +4,7 @@ import FruitsCat from '../../assets/fruits-and-veggies.png'
 import Dairy from '../../assets/dairy-and-eggs.png'
 import SeaFood from '../../assets/meat-and-seafood.png'
 import Button from '../Button/Button'
+import { Link } from 'react-router-dom'
 
 const Category = () => {
 
@@ -22,7 +23,8 @@ const Category = () => {
                 <div className='bg-zinc-100 pt-10 p-8 rounded-xl '> 
                     <h3  className='text-zinc-800 text-3xl font-bold'>{card.title}</h3>
                     <p className='text-zinc-600 mt-3 mb-9'>{card.description}</p>
-                    <Button content ="See All" />
+                    {/* <Button content ="See All" /> */}
+                    <Link  className='bg-gradient-to-b from-orange-400 to-orange-500 text-white px-8 py-3 rounded-full  md:text-lg text-md hover:scale-105 hover:to-orange-600 transition-all duration-300 cursor-pointer' content ="See All" ></Link>
                 </div>
             </div>
         )
